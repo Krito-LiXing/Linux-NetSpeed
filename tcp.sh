@@ -11,7 +11,7 @@ export PATH
 #=================================================
 
 sh_ver="1.3.2"
-github="raw.githubusercontent.com/hijkpw/Linux-NetSpeed/master"
+github="raw.githubusercontent.com/Krito-LiXIng/Linux-NetSpeed/master"
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info="${Green_font_prefix}[信息]${Font_color_suffix}"
@@ -209,7 +209,7 @@ startlotserver(){
 		apt-get update
 		apt-get install ethtool
 	fi
-	bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/hijkpw/lotServer-1/master/Install.sh) install
+	bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/Krito-LiXIng/lotServer-1/master/Install.sh) install
 	sed -i '/advinacc/d' /appex/etc/config
 	sed -i '/maxmode/d' /appex/etc/config
 	echo -e "advinacc=\"1\"
@@ -257,7 +257,7 @@ remove_all(){
 	sed -i '/net.ipv4.tcp_timestamps/d' /etc/sysctl.conf
 	sed -i '/net.ipv4.tcp_max_orphans/d' /etc/sysctl.conf
 	if [[ -e /appex/bin/lotServer.sh ]]; then
-		bash <(wget --no-check-certificate -qO- https://github.com/hijkpw/lotServer-1/raw/master/Install.sh) uninstall
+		bash <(wget --no-check-certificate -qO- https://github.com/Krito-LiXIng/lotServer-1/raw/master/Install.sh) uninstall
 	fi
 	clear
 	echo -e "${Info}:清除加速完成。"
@@ -335,7 +335,7 @@ Update_Shell(){
 start_menu(){
 clear
 echo && echo -e " TCP加速 一键安装管理脚本 ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix}
-  -- 就是爱生活 | 94ish.me --
+  --  |  --
   
  ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
 ————————————内核管理————————————
